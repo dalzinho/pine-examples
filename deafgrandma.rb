@@ -4,12 +4,17 @@ def random_year
 end
 
 something_nice = "_"
+byes = 0
 
-until something_nice == "BYE"
+until byes == 3
 
   puts "Say something nice to your granny:"
   print "> "
   something_nice = gets.chomp
+
+  if something_nice == "BYE"
+    byes += 1
+  end
 
   if something_nice == something_nice.upcase
     random_year
