@@ -1,6 +1,7 @@
 puts "Hello there! I calculate all the leap years between two given years"
+sleep(3)
 
-puts "Plaese enter a starting year: "
+puts "Please enter a starting year: "
 start_year = gets.chomp.to_i
 puts ''
 puts "Please put an ending year"
