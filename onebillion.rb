@@ -18,12 +18,11 @@ t = Time.local(year, month, day, hour, minute)
 one_billion = t + 1_000_000_000
 
 if one_billion > Time.now
-  puts "You will turn one billion seconds old on #{one_billion.day}-#{one_billion.month}-#{one_billion.year} at #{one_billion.hour}:#{one_billion.min}."
+  puts "You will turn one billion seconds old on #{one_billion.strftime("%A, %d %B %Y at %H:%M")}"
   puts "Use your remaining seconds wisely, Padawan."
 
-
 else
-  puts "You turned one billion seconds old on #{one_billion.day}-#{one_billion.month}-#{one_billion.year} at #{one_billion.hour}:#{one_billion.min}."
+  puts "You turned one billion seconds old on #{one_billion.strftime("%A, %d %B %Y at %H:%M")}"
   puts "This crushing insight into the futility of existence has been brought to you free of charge!"
 end
 
